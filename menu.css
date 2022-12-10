@@ -1,0 +1,178 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 10;
+}
+
+.container {
+  min-width: 100vw;
+  background: linear-gradient(#3ceb62, rgb(255, 255, 255), #aff28b);
+  
+}
+.container a {
+  text-decoration: none;
+}
+
+/********* CSS navbar *********/
+.navbar {
+  padding: 10;
+  display: block;
+  float: right;
+  
+}
+ .navbar-nav li {
+  list-style: none;
+  display: inline-block;
+ }
+
+ .navbar-nav li a {
+  text-decoration: none;
+  line-height: 35px;
+  padding: 0 15px;
+ }
+
+
+
+header {
+background: linear-gradient(rgb(65, 62, 62), rgb(2, 2, 2)); 
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+  top: 1;
+  z-index: 1;
+  text-align: center;
+}
+
+.logo {
+  margin: 0.5rem;
+}
+
+.img-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.slogan {
+  display: flex;
+  letter-spacing: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.slogan span {
+  position: relative;
+  display: inline-block;
+  color: #8a0606;
+  animation: slogan 2.4s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+
+/* ======================== ======================== ======================== */
+
+.navbar-light .navbar-nav .current-item {
+  color: rgb(1, 8, 1);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: red;
+}
+
+
+
+
+@keyframes slogan {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-20px);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slogan {
+    margin: 1rem;
+  }
+}
+body {
+	background:  linear-gradient(
+	100deg, #5098db 40%,#46fc46 100%);
+}
+
+
+#flex-area {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+ 	margin: auto auto; 
+	
+}
+
+h1 {
+	text-align: center;
+	padding: 20px 0 10px 0;
+}
+
+h3 {
+	text-align: center;
+}
+
+#text-content {
+	border-radius: 20px;
+	padding: 0px 5px 0 5px;
+	width: 100%;
+  font-size: 14pt;
+	
+	
+	margin: auto;
+}
+
+#item-1 {
+	width: 20rem;
+}
+
+#giay {
+	
+ width: 33rem;
+/* 	margin-right: 10px; */
+}
+.giay-full:hover {
+	cursor: pointer;
+}
+.animate-charcter-2 {
+	text-transform: uppercase;
+	background-image: linear-gradient(-225deg,
+			#1f096e 0%,
+			#44107a 29%,
+			#ff1361 67%,
+			#fff800 100%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: rgb(255, 255, 255);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip2 2.5s linear infinite;
+/* 	display: inline-block; */
+	
+	font-size: 30px;
+	padding-top: 10px;
+}

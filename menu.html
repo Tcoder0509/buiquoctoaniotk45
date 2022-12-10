@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a href="https://www.ctu.edu.vn/" class="logo">
+					<img class="img-logo" src="icon/ctu.png" alt="" />
+				</a>
+				<a class="navbar-brand" href="index.html">HOME</a>
+				<div class="slogan">
+					<span style="--i: 1">W</span>
+					<span style="--i: 2">e</span>
+					<span style="--i: 3">l</span>
+					<span style="--i: 4">l</span>
+					<span class="--i: 5">c</span>
+					<span style="--i: 6">o</span>
+					<span class="--i: 7">m</span>
+					<span style="--i: 8">e</span>
+					<span style="opacity:0";>-</span>
+					<span style="--i: 8">T</span>
+					<span style="--i: 9">o</span>
+					<span class="opacity:0";>-</span>
+					<span style="--i: 10">M</span>
+					<span style="--i: 11">y</span>
+					<span style="opacity: 0;">-</span>
+					<span style="--i: 14">S</span>
+					<span style="--i: 15">h</span>
+					<span style="--i: 15">o</span>
+					<span style="--i: 15">p</span>
+				</div>
+
+	
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link item-member" aria-current="page" href="thanhvien.html">GIỚI THIỆU THÀNH VIÊN</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-solution" href="ytuonggiaiphap.html">Ý TƯỞNG - GIẢI PHÁP</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-sale" href="sanpham.html">BÁN HÀNG</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-admin" href="thongke.html">QUẢN LÝ - THỐNG KÊ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-contact" href="lienhe.html">LIÊN HỆ</a>
+						</li>
+					</ul>
+				
+				
+				
+			</div>
+		</nav>
+	</header>
+	<div id="root">
+		
+		<div id="menu"></div>
+		<script>
+			loadMenu("home")
+		</script>
+		
+		<div id="content">
+			
+			<h1 id="iheader" class="animate-charcter ">Tổng quan về ứng dụng</h1>
+			
+			<div id="flex-area">
+				<div id="item-1">
+					<div id="text-content" class="gradient-border">
+						
+						<h3>Web ứng dụng gồm</h3>
+						<ul>
+							<li>Trang chủ giới thiệu tổng quan về yêu cầu bài tập cuối kỳ.</li>
+							<li>Trang giới thiệu thành viên và phân công công việc thực hiện bài tập cũng như đánh giá mức độ tham gia thực hiện.</li>
+							<li>Trang ý tưởng và giải pháp thực hiện nhằm liệt kê và mô tả ý tưởng cũng như giải pháp để thực hiện ý tưởng.</li>
+							<li>Trang thông tin liên hệ đưa ra các cách thức liên hệ.</li>
+							<li>Tổng quan về web ứng dụng nhằm thực hiện menu và liên kết các trang nội dung.</li>
+						</ul>
+					</div>
+				</div>			
+				
+				
+				<img id="giay" src="image/posters" alt="">
+				
+			</div>
+			
+			
+		
+		</div>
+		
+		
+	</div>
+	
+	<script>
+	
+		$('#root').hide()
+		
+		var audio = new Audio('../music/RiverFlowsinYou.mp3');
+		
+		
+		
+		document.querySelector('.giay-full').addEventListener('click', function (e) {
+			$('.giay-full').hide( "drop", { direction: "right" }, "slow" , function(e) {
+				$('#root').fadeIn('slow', function(e) {
+					loadMenu("home")
+					audio.play()
+				})
+			});
+			
+			
+			
+		})
+		
+	</script>
+
+</body>
+
+</html>

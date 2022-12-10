@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang bán hàng</title>
+
+	<!-- helper -->
+	<script src="../scripts/helper.js"></script>
+
+	<!-- fas icon -->
+	<script src="https://kit.fontawesome.com/1982d0c807.js" crossorigin="anonymous"></script>
+
+	<!-- bootrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="sanpham.css">
+	
+	<link rel="icon" type="image/x-icon" href="icon/carts.png">
+	
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a href="https://www.ctu.edu.vn/" class="logo">
+					<img class="img-logo" src="icon/ctu.png" alt="" />
+				</a>
+				<a class="navbar-brand" href="index.html">HOME</a>
+				<div class="slogan">
+					<span style="--i: 1">W</span>
+					<span style="--i: 2">e</span>
+					<span style="--i: 3">l</span>
+					<span style="--i: 4">l</span>
+					<span class="--i: 5">c</span>
+					<span style="--i: 6">o</span>
+					<span class="--i: 7">m</span>
+					<span style="--i: 8">e</span>
+					<span style="opacity:0";>-</span>
+					<span style="--i: 8">T</span>
+					<span style="--i: 9">o</span>
+					<span class="opacity:0";>-</span>
+					<span style="--i: 10">M</span>
+					<span style="--i: 11">y</span>
+					<span style="opacity: 0;">-</span>
+					<span style="--i: 14">S</span>
+					<span style="--i: 15">h</span>
+					<span style="--i: 15">o</span>
+					<span style="--i: 15">p</span>
+				</div>
+
+	
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link item-member" aria-current="page" href="thanhvien.html">GIỚI THIỆU THÀNH VIÊN</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-solution" href="ytuonggiaiphap.html">Ý TƯỞNG - GIẢI PHÁP</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-sale" href="sanpham.html">BÁN HÀNG</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-admin" href="thongke.html">QUẢN LÝ - THỐNG KÊ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-contact" href="lienhe.html">LIÊN HỆ</a>
+						</li>
+					</ul>
+				
+				
+				
+			</div>
+		</nav>
+	</header>
+
+	<div id="root">
+
+		<div id="menu"></div>
+		<script>
+			loadMenu("sale")
+		</script>
+
+		<div id="content">
+
+			<section class="section-products">
+				<div class="fcontainer">
+
+
+					<div class="row justify-content-center text-center">
+						<div class="col-md-8 col-lg-5">
+							<div class="header">
+								<h2 class="animate-charcter ">Sản phẩm</h2>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="row">
+
+
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3 ">
+							<div id="product-1" class="single-product ">
+								<div class="part-1">
+
+									<div class="input-group mb-3 stored ">
+										<span class="input-group-text">Tồn kho</span>
+										<input type="text" class="form-control label-stored" placeholder="0" disabled>
+									</div>
+									<div class="input-group mb-3 sale">
+										<span class="input-group-text">Số lượng mua</span>
+										<input type="text" class="form-control label-sale" placeholder="0">
+
+										<button class="btn btn-success btn-sale" id="btn-sale-1" type="button">
+											<i class="fas fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+								<div class="part-2">
+									<h3 class="product-title">GIÀY FORUM LOW</h3>
+<!-- 									<h4 class="product-old-price">$79.99</h4> -->
+										<h4 class="product-price">2.090.000 đ	</h4>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+							<div id="product-2" class="single-product">
+								<div class="part-1">
+
+									<div class="input-group mb-3 stored">
+										<span class="input-group-text">Tồn kho</span>
+										<input type="text" class="form-control label-stored" placeholder="0" disabled>
+									</div>
+									<div class="input-group mb-3 sale">
+										<span class="input-group-text">Số lượng mua</span>
+										<input type="text" class="form-control label-sale" placeholder="0">
+
+										<button class="btn btn-success btn-sale" id="btn-sale-2" type="button">
+											<i class="fas fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+								<div class="part-2">
+									<h3 class="product-title">Giày CONVERSE CHUCK TAYLOR ALL STAR</h3>
+<!-- 									<h4 class="product-old-price">$79.99</h4> -->
+										<h4 class="product-price">2.150.000 đ</h4>
+								</div>
+							</div>
+						</div>
+						
+						
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+							<div id="product-3" class="single-product">
+								<div class="part-1">
+						
+									<div class="input-group mb-3 stored">
+										<span class="input-group-text">Tồn kho</span>
+										<input type="text" class="form-control label-stored" placeholder="0" disabled>
+									</div>
+									<div class="input-group mb-3 sale">
+										<span class="input-group-text">Số lượng mua</span>
+										<input type="text" class="form-control label-sale" placeholder="0">
+						
+										<button class="btn btn-success btn-sale" id="btn-sale-3" type="button">
+											<i class="fas fa-shopping-cart"></i>
+										</button>
+									</div>
+								</div>
+								<div class="part-2">
+									<h3 class="product-title">Giày Vans Old Skool Black Checkers Màu xám</h3>
+										<h4 class="product-old-price">2.290.000 đ</h4>
+										<h4 class="product-price">1.700.000 đ</h4>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+
+	</div>
+	<div id="footer">
+		<b><center><p>Sản phẩm chính hãng đảm bảo chất lượng. Mua ngay!<br>Lựa chọn tốt - Giá hợp lý</p> </center>
+	</div>
+	<script>
+		var product1Stored = 0
+		var product2Stored = 0
+		var product3Stored = 0
+
+		// hàm cập nhật tồn kho
+		function productStoredUpdate() {
+			getSumImportExport(function(sumImport, sumExport) {
+				product1Stored = sumImport - sumExport
+				document.querySelector('#product-1 .label-stored').value = product1Stored
+			}, 'product-1')
+
+			getSumImportExport(function(sumImport, sumExport) {
+				product2Stored = sumImport - sumExport
+				document.querySelector('#product-2 .label-stored').value = product2Stored
+			}, 'product-2')
+			
+			getSumImportExport(function(sumImport, sumExport) {
+				product3Stored = sumImport - sumExport
+				document.querySelector('#product-3 .label-stored').value = product3Stored
+			}, 'product-3')
+		}
+
+		// cập nhật tồn kho sau mỗi 5s
+		productStoredUpdate()
+		setInterval(function() {
+			productStoredUpdate()
+		}, 1000)
+
+
+
+		// thực hiện xuất hàng khi người mua nhấn mua hàng
+		document.querySelectorAll('.btn-sale').forEach(function(ele) {
+			ele.addEventListener('click', function(event) {
+				switch (event.target.id === '' ? event.target.parentElement.id : event.target.id) {
+					case 'btn-sale-1':
+						var value = document.querySelector('#product-1 .label-sale').value
+						setFieldValue(product1Export, value)
+							.then(res => {
+								waitUntilSendAvailable()
+							})
+						break
+					case 'btn-sale-2':
+						var value = document.querySelector('#product-2 .label-sale').value
+						setFieldValue(product2Export, value)
+							.then(res => {
+								waitUntilSendAvailable()
+							})
+						break
+						
+					case 'btn-sale-3':
+						var value = document.querySelector('#product-3 .label-sale').value
+						setFieldValue(product3Export, value)
+							.then(res => {
+								waitUntilSendAvailable()
+							})
+						break
+				}
+			})
+		})
+
+
+		// xử lý sự kiện người mua nhập số lượng
+		document.querySelectorAll('.label-sale').forEach(function(ele) {
+			ele.addEventListener('input', function(e) {
+
+				// xóa ký tự không phải chữ số
+				value = parseInt(e.target.value.replace(/[^0-9]/g, ''))
+				value = value === NaN ? 0 : value
+
+				var storedValue = 0
+				// lấy số lượng tồn kho sản phẩm tương ứng
+				switch (e.target.parentElement.parentElement.parentElement.id) {
+					case 'product-1':
+						storedValue = product1Stored
+						break
+					case 'product-2':
+						storedValue = product2Stored
+						break;
+					case 'product-3':
+						storedValue = product3Stored
+						break;
+				}
+
+
+				// nếu số lượng mua < số lượng tồn kho
+				if (storedValue - value >= 0) {
+					e.target.value = value
+				} else {
+					e.target.value = e.target.value.slice(0, -1)
+				}
+
+			})
+		})
+
+
+		// hàm disable xuất hàng 15s(cho tới khi lần xuất hàng tiếp theo được chấp nhận)
+		function waitUntilSendAvailable() {
+			document.querySelectorAll('.btn-sale').forEach(function(ele) {
+				ele.disabled = true
+			})
+
+			var waitTIme = 15000
+			setTimeout(function() {
+				document.querySelectorAll('.btn-sale').forEach(function(ele) {
+					ele.disabled = false
+				})
+			}, waitTIme)
+		}
+	</script>
+
+</body>
+
+</html>

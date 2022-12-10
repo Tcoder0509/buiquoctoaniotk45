@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ý tưởng - giải pháp</title>
+	
+	<!-- helper -->
+	<script src="../scripts/helper.js"></script>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="ytuonggiaiphap.css">
+	
+	<link rel="icon" type="image/x-icon" href="icon/idea.png">
+	
+	
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a href="https://www.ctu.edu.vn/" class="logo">
+					<img class="img-logo" src="icon/ctu.png" alt="" />
+				</a>
+				<a class="navbar-brand" href="index.html">HOME</a>
+				<div class="slogan">
+					<span style="--i: 1">W</span>
+					<span style="--i: 2">e</span>
+					<span style="--i: 3">l</span>
+					<span style="--i: 4">l</span>
+					<span class="--i: 5">c</span>
+					<span style="--i: 6">o</span>
+					<span class="--i: 7">m</span>
+					<span style="--i: 8">e</span>
+					<span style="opacity:0";>-</span>
+					<span style="--i: 8">T</span>
+					<span style="--i: 9">o</span>
+					<span class="opacity:0";>-</span>
+					<span style="--i: 10">M</span>
+					<span style="--i: 11">y</span>
+					<span style="opacity: 0;">-</span>
+					<span style="--i: 14">S</span>
+					<span style="--i: 15">h</span>
+					<span style="--i: 15">o</span>
+					<span style="--i: 15">p</span>
+				</div>
+
+	
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link item-member" aria-current="page" href="thanhvien.html">GIỚI THIỆU THÀNH VIÊN</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-solution" href="ytuonggiaiphap.html">Ý TƯỞNG - GIẢI PHÁP</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-sale" href="sanpham.html">BÁN HÀNG</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-admin" href="thongke.html">QUẢN LÝ - THỐNG KÊ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link item-contact" href="lienhe.html">LIÊN HỆ</a>
+						</li>
+					</ul>
+				
+				
+				
+			</div>
+		</nav>
+	</header>
+	
+	<div id="root">
+			
+			<div id="menu"></div>
+			<script>
+				loadMenu("solution")
+			</script>
+			
+			<div id="content">
+				
+				<div class="header-container">
+					<h1 class="animate-charcter" >áp dụng IOT vào quản lý chi phí mua bán giày và tồn kho</h1>
+				</div>
+				
+				<ol class="root-ol">
+					<li>
+						<b>Ý tưởng:</b>
+						<p>Ý tưởng của đồ án là tạo ra một website quản lý & mua bán giày,
+							sử dụng server MQTT của Thingspeak làm nơi lưu trữ.</p>
+					</li>
+					
+					<li>
+						<b>	Giải pháp </b>
+						<ol class="ol-giaiphap">
+							<li>
+								<b>Phần giao diện</b>	 
+								<ul>
+									<li>
+										Trang mua bán:
+										<p>Đây là nơi khách hàng xem giá cả và chọn mua (rê chuột vào sản phẩm, nhập số lượng cần mua và nhấn vào giỏ hàng để mua).
+											Với quy mô đồ án nhỏ, ta chỉ chọn 3 sản phẩm giày. Nhập liệu bẳng thẻ input các nút ấn sử dụng thẻ button.
+										</p>
+									</li>
+									<li>
+										Trang quản lý:
+										<p>Trang này dành cho người quản lý / chủ shop, ở đây ta có thể cập nhật số lượng nhập hàng về, xem số lượng tồn kho cũng như là
+											biểu đồ nhập / xuất của từng sản phẩm. nhập liệu bằng thẻ input các nút ấn sử dụng thẻ button
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<b>Phần lưu trữ</b>
+								<p>Để lưu trữ dữ liệu ta sử dụng server MQTT của Thingspeak, các trường dữ liệu lưu được miêu tả như bảng sau:</p>
+								
+								<table class="rainbow">
+									<tr>
+										<th>Trường</th>
+										<th>Chức năng</th>
+									</tr>
+									
+									<tr>
+										<td>Field 1</td>
+										<td>Lưu các lần nhập hàng sản phẩm 1</td>
+									</tr>
+									<tr>
+										<td>Field 2</td>
+										<td>Lưu các lần xuất hàng sản phẩm 1</td>
+									</tr>
+									
+									<tr>
+										<td>Field 3</td>
+										<td>Lưu các lần nhập hàng sản phẩm 2</td>
+									</tr>
+									<tr>
+										<td>Field 4</td>
+										<td>Lưu các lần xuất hàng sản phẩm 2</td>
+									</tr>
+									
+									
+									<tr>
+										<td>Field 5</td>
+										<td>Lưu các lần nhập hàng sản phẩm 3</td>
+									</tr>
+									<tr>
+										<td>Field 6</td>
+										<td>Lưu các lần xuất hàng sản phẩm 3</td>
+									</tr>
+									
+									
+								</table>
+								
+							</li>
+						</ol>
+					</li>
+					
+				</ol>
+				
+			
+				
+			
+			</div>
+			
+		</div>
+		<div id="footer">
+			
+			<center><p>@KC326 Course: Nhóm 14_IoT</p> </center>
+			</div>
+			
+</body>
+</html>

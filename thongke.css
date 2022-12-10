@@ -1,0 +1,117 @@
+body {
+	color: #050505;
+	background:  linear-gradient(
+	100deg, #7cceee 32%,#2ce469 100%);
+}
+
+.input-group {
+	width: 70%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+ h1 {
+	margin-top: .5rem;
+	text-align: center;
+}
+
+.chart-container {
+	width: 95%;
+}
+
+.chart {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#chartNhap {
+	flex-grow: 1;
+/* 	background-color: blue;  */
+	margin-right: 2px;
+}
+
+#chartXuat {
+	flex-grow: 1;
+/*  	background-color: green;  */
+	 margin-left: 2px;
+}
+
+.stored {
+	max-width: 100px;
+}
+
+.btn-import {
+	background-color: #ebf1ec;
+}
+
+.btn-import:disabled {
+	background-color: rgb(199, 192, 192);
+}
+
+
+
+
+.animate-charcter {
+	text-transform: uppercase;
+	background-image: linear-gradient(-225deg,
+			#231557 0%,
+			#44107a 29%,
+			#ff1361 67%,
+			#fff800 100%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 3s linear infinite;
+/* 	display: inline-block; */
+	
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+.animate-charcter-2 {
+	text-transform: uppercase;
+	background-image: linear-gradient(-225deg,
+			#1f096e 0%,
+			#44107a 29%,
+			#ff1361 67%,
+			#fff800 100%);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: rgb(255, 255, 255);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip2 2.5s linear infinite;
+/* 	display: inline-block; */
+	
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+@keyframes textclip2 {
+	to {
+		background-position: 200% center;
+	}
+}
+#footer p{
+	font-size: 12pt;
+	font-style: italic;
+	color: rgb(7, 7, 7);
+	padding: 100px;
+	}
